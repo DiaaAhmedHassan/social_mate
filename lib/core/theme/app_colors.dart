@@ -15,4 +15,6 @@ class AppColors{
   static const Color primaryBlur = Color(0xffD8F1FE);
   static const Color grey = Color(0xffC4C4C4);
 
+  static Color hintColor = Color(0xff8C8F90).withOpacity(0.6);
+
 }

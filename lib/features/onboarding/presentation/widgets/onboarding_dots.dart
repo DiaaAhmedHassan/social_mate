@@ -4,16 +4,10 @@ import 'package:social_mate/core/shared_widgets/spacer.dart';
 import 'package:social_mate/core/theme/app_colors.dart';
 
 // ignore: must_be_immutable
-class OnboardingDots extends StatefulWidget {
+class OnboardingDots extends StatelessWidget {
    OnboardingDots({super.key, this.currentIndex = 0});
 
    int currentIndex;
-
-  @override
-  State<OnboardingDots> createState() => _OnboardingDotsState();
-}
-
-class _OnboardingDotsState extends State<OnboardingDots> {
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +16,7 @@ class _OnboardingDotsState extends State<OnboardingDots> {
       children: List.generate(3, (index){
         return Row(
           children: [
-            dot(widget.currentIndex == index),
+            dot(currentIndex == index),
             HorizontalSpacer(10)
           ],
         );

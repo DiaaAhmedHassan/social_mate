@@ -9,3 +9,6 @@ class Images{
   static const String appLabel = "assets/images/app_label.svg";
 }
 
+class AppIcons{
+  static const String googleIcon = "assets/icons/google.svg";
+}

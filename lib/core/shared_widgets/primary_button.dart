@@ -35,7 +35,7 @@ class PrimaryButton extends StatelessWidget {
         )
       ),  
       onPressed: onPressed, 
-      child: Text(label, style: AppTextStyles(foregroundColor).f16Light,)),
+      child: Text(label, style: AppTextStyles(foregroundColor).f18Regular,)),
     );
   }
 }
