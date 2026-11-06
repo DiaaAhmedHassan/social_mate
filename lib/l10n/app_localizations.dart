@@ -112,6 +112,108 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Erat vitae quis quam augue quam a.'**
   String get onboarding1_subtitle;
+
+  /// No description provided for @joinNow.
+  ///
+  /// In en, this message translates to:
+  /// **'Join Now'**
+  String get joinNow;
+
+  /// Auth labels
+  ///
+  /// In en, this message translates to:
+  /// **'Sign in'**
+  String get authSignin;
+
+  /// No description provided for @authSignup.
+  ///
+  /// In en, this message translates to:
+  /// **'Signup'**
+  String get authSignup;
+
+  /// No description provided for @exampleName.
+  ///
+  /// In en, this message translates to:
+  /// **'john doe'**
+  String get exampleName;
+
+  /// No description provided for @authEmailPhone.
+  ///
+  /// In en, this message translates to:
+  /// **'Email/Phone'**
+  String get authEmailPhone;
+
+  /// No description provided for @authEmailPhoneEg.
+  ///
+  /// In en, this message translates to:
+  /// **'eg: example@domain.com'**
+  String get authEmailPhoneEg;
+
+  /// No description provided for @authPassword.
+  ///
+  /// In en, this message translates to:
+  /// **'Password'**
+  String get authPassword;
+
+  /// No description provided for @authEnterPassword.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter password'**
+  String get authEnterPassword;
+
+  /// No description provided for @authForgetPassword.
+  ///
+  /// In en, this message translates to:
+  /// **'Forget password ?'**
+  String get authForgetPassword;
+
+  /// No description provided for @authLogin.
+  ///
+  /// In en, this message translates to:
+  /// **'Login'**
+  String get authLogin;
+
+  /// No description provided for @orSignInWith.
+  ///
+  /// In en, this message translates to:
+  /// **'Or signin with'**
+  String get orSignInWith;
+
+  /// No description provided for @google.
+  ///
+  /// In en, this message translates to:
+  /// **'Google'**
+  String get google;
+
+  /// No description provided for @donotHaveAnAccount.
+  ///
+  /// In en, this message translates to:
+  /// **'Don\'t have an account yet ?'**
+  String get donotHaveAnAccount;
+
+  /// No description provided for @authFullName.
+  ///
+  /// In en, this message translates to:
+  /// **'Your Full Name'**
+  String get authFullName;
+
+  /// No description provided for @authConfirmPassword.
+  ///
+  /// In en, this message translates to:
+  /// **'Confirm password'**
+  String get authConfirmPassword;
+
+  /// No description provided for @authRetypePassword.
+  ///
+  /// In en, this message translates to:
+  /// **'Retype password'**
+  String get authRetypePassword;
+
+  /// No description provided for @orSignupWith.
+  ///
+  /// In en, this message translates to:
+  /// **'Or sign up wit'**
+  String get orSignupWith;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

@@ -7,14 +7,9 @@ import 'package:social_mate/features/auth/presenation/widgets/auth_componant/sig
 import 'package:social_mate/features/auth/presenation/widgets/auth_navigator.dart';
 import 'package:social_mate/features/onboarding/presentation/widgets/onboarding_background.dart';
 
-class AuthScreen extends StatefulWidget {
-  const new({super.key});
+class AuthScreen extends StatelessWidget {
+  const AuthScreen({super.key});
 
-  @override
-  State<AuthScreen> createState() => _AuthScreenState();
-}
-
-class _AuthScreenState extends State<AuthScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -32,9 +27,9 @@ class _AuthScreenState extends State<AuthScreen> {
                     SvgPicture.asset(Images.appLabel),
                     SizedBox(height: 70.h,),
                     AuthNavigator(
-                      children: [
-                        LoginWidget(),
-                        SignUpWidget(),
+                      pages: [
+                        (goTo) => LoginWidget(onSignupTap: () => goTo(1)),
+                        (goTo) => SignUpWidget(),
                       ],
                     )
                     

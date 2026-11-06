@@ -2,16 +2,17 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil_plus/flutter_screenutil_plus.dart';
 import 'package:social_mate/core/theme/app_colors.dart';
 import 'package:social_mate/core/theme/app_text_styles.dart';
+import 'package:social_mate/l10n/app_localizations.dart';
 
 class AuthNavigator extends StatefulWidget {
   const AuthNavigator({
     super.key,
     this.initialIndex = 0,
-    required this.children,
+    required this.pages,
   });
 
   final int initialIndex;
-  final List<Widget> children;
+ final List<Widget Function(ValueChanged<int> goTo)> pages;
 
   @override
   State<AuthNavigator> createState() => _AuthNavigatorState();
@@ -20,11 +21,17 @@ class AuthNavigator extends StatefulWidget {
 class _AuthNavigatorState extends State<AuthNavigator> {
   late int _index = widget.initialIndex;
 
+   void _goTo(int i) {
+    if (i == _index) return;
+    setState(() => _index = i);
+  }
+
   @override
   Widget build(BuildContext context) {
+    final local = AppLocalizations.of(context)!;
     return Column(
       children: [
-        Row(children: [_tab("Sign in", 0), _tab("Sign up", 1)]),
+        Row(children: [_tab(local.authSignin, 0), _tab(local.authSignup, 1)]),
         Row(
           children: List.generate(
             3,
@@ -39,7 +46,7 @@ class _AuthNavigatorState extends State<AuthNavigator> {
             duration: const Duration(milliseconds: 300),
             child: KeyedSubtree(
               key: ValueKey(_index),
-              child: widget.children[_index],
+              child: widget.pages[_index](_goTo),
             ),
           ),
         ),

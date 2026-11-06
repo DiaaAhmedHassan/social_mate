@@ -6,12 +6,14 @@ import 'package:social_mate/core/shared_widgets/divider_with_text.dart';
 import 'package:social_mate/core/shared_widgets/spacer.dart';
 import 'package:social_mate/core/theme/app_colors.dart';
 import 'package:social_mate/core/theme/app_text_styles.dart';
+import 'package:social_mate/l10n/app_localizations.dart';
 
 class SocialAuthWidget extends StatelessWidget {
   const SocialAuthWidget({super.key, required this.dividerText});
   final String dividerText;
   @override
   Widget build(BuildContext context) {
+    final local = AppLocalizations.of(context)!;
     return Column(
       children: [
         DividerWithText(text: dividerText),
@@ -22,7 +24,7 @@ class SocialAuthWidget extends StatelessWidget {
             Expanded(
               child: _socialButton(
                 iconPath: AppIcons.googleIcon,
-                label: "Google",
+                label: local.google,
                 onPressed: () {},
               ),
             ),
