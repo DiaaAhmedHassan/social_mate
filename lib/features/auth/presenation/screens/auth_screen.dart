@@ -3,6 +3,7 @@ import 'package:flutter_screenutil_plus/flutter_screenutil_plus.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:social_mate/core/constants/assets.dart';
 import 'package:social_mate/features/auth/presenation/widgets/auth_componant/login_widget.dart';
+import 'package:social_mate/features/auth/presenation/widgets/auth_componant/sign_up_widget.dart';
 import 'package:social_mate/features/auth/presenation/widgets/auth_navigator.dart';
 import 'package:social_mate/features/onboarding/presentation/widgets/onboarding_background.dart';
 
@@ -33,7 +34,7 @@ class _AuthScreenState extends State<AuthScreen> {
                     AuthNavigator(
                       children: [
                         LoginWidget(),
-                        LoginWidget(),
+                        SignUpWidget(),
                       ],
                     )
                     

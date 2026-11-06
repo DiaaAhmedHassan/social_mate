@@ -37,7 +37,19 @@ class LoginWidget extends StatelessWidget {
           VerticalSpacer(32),
           PrimaryButton(label: "Login", onPressed: (){}),
           VerticalSpacer(20),
-          SocialAuthWidget(dividerText: "or sign in with")
+          SocialAuthWidget(dividerText: "or sign in with"),
+           VerticalSpacer(60),
+
+        RichText(text: TextSpan(
+          text: "Don't have an account? ",
+          style: AppTextStyles(AppColors.black).f16Regular,
+          children: [
+            TextSpan(
+              text: "Sign up",
+              style: AppTextStyles(AppColors.primary).f16Regular,
+            )
+          ]
+        ),)
 
 
 

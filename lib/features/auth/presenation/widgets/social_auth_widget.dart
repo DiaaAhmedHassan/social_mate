@@ -28,18 +28,7 @@ class SocialAuthWidget extends StatelessWidget {
             ),
           ],
         ),
-        VerticalSpacer(60),
-
-        RichText(text: TextSpan(
-          text: "Don't have an account? ",
-          style: AppTextStyles(AppColors.black).f16Regular,
-          children: [
-            TextSpan(
-              text: "Sign up",
-              style: AppTextStyles(AppColors.primary).f16Regular,
-            )
-          ]
-        ),)
+       
       ],
     );
   }
