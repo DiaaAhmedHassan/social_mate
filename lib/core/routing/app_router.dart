@@ -1,0 +1,17 @@
+import 'package:flutter/material.dart';
+import 'package:social_mate/core/routing/route_names.dart';
+import 'package:social_mate/features/onboarding/presentation/screens/onboarding_screen.dart';
+import 'package:social_mate/features/splash/splash_screen.dart';
+
+class AppRouter {
+  Route generateRoute(RouteSettings settings){
+    switch( settings.name){
+      case RouteNames.splash:
+        return MaterialPageRoute(builder: (_) => SplashScreen());
+      case RouteNames.onboarding:
+        return MaterialPageRoute(builder: (_) => OnboardingScreen());
+      default:
+        return MaterialPageRoute(builder: (_) => Scaffold(body: Center(child: Text("No defiend routes"),),));
+    }
+  }
+}
