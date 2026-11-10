@@ -1,0 +1,26 @@
+{
+    "app_name": "social mate",
+
+    "onboarding1_title": "ابحث على الأصدقاء و احصل على الالهام",
+    "onboarding1_subtitle": "قم باضافة الاصدقاء , شارك افكارك, و احصل على الالهام من الاخرين",
+
+    "joinNow": "ابدأ الآن",
+    "exampleName": "أحمد محمد",
+    "authSignin": "تسجيل دخول",
+    "authSignup": "إنشاء حساب",
+    "authEmailPhone": "البريد الالكتروني او رقم الهاتف",
+    "authEmailPhoneEg": "eg: example@domain.com",
+    "authPassword": "كلمة السر",
+    "authEnterPassword": "أدخل كلمة السر",
+    "authForgetPassword": "نسيت كلمة السر ؟",
+    "authLogin": "تسجيل دخول",
+    "orSignInWith": "او سجل دخول عبر",
+    "google": "جوجل",
+    "donotHaveAnAccount": "ليس لديك حساب بعد ؟",
+
+    "authSignup": "إنشاء حساب",
+    "authFullName": "الاسم كامل",
+    "authConfirmPassword": "تأكيد كلمة المرور",
+    "authRetypePassword": "أعد كتابة كلمة المرور",
+    "orSignupWith": "أو استعمل حساب"
+}

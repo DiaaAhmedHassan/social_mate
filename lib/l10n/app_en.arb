@@ -1,0 +1,35 @@
+{
+    "app_name": "Social mate",
+
+    "onboarding1_title": "Find Friends & Get Inspiration",
+    "onboarding1_subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Erat vitae quis quam augue quam a.",
+    "@onboarding1_title":{
+         "description": "Onboarding1 items"
+    },
+
+    "joinNow": "Join Now",
+    "authSignin": "Sign in",
+    "authSignup": "Sign up",
+    "exampleName": "john doe",
+    "authEmailPhone": "Email/Phone",
+    "authEmailPhoneEg": "eg: example@domain.com",
+    "authPassword": "Password",
+    "authEnterPassword": "Enter password",
+    "authForgetPassword": "Forget password ?",
+    "authLogin": "Login",
+    "orSignInWith": "Or signin with",
+    "google": "Google",
+    "donotHaveAnAccount": "Don't have an account yet ?",
+
+    "authSignup": "Signup",
+    "authFullName": "Your Full Name",
+    "authConfirmPassword": "Confirm password",
+    "authRetypePassword": "Retype password",
+    "orSignupWith": "Or sign up wit",
+    
+
+    "@authSignin": {
+        "description": "Auth labels"
+    }
+
+}
