@@ -19,6 +19,7 @@ class App extends StatelessWidget {
       builder: (context, child) {
         return  MaterialApp(
         debugShowCheckedModeBanner: false,
+        
         supportedLocales: [Locale('en'), Locale('ar')],
         localizationsDelegates: [
           AppLocalizations.delegate,
@@ -27,7 +28,7 @@ class App extends StatelessWidget {
           GlobalCupertinoLocalizations.delegate,
         ],
         onGenerateRoute: appRouter.generateRoute,
-        initialRoute: RouteNames.auth,
+        initialRoute: RouteNames.home,
         
       );
       },

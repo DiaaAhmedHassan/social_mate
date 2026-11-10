@@ -1,14 +1,19 @@
 class Images{
-  static const String onboardingBackground = "assets/images/onboarding_background.png";
-  static const String onboardingBackground1 = "assets/images/onboarding_background1.png";
+  static const String prefix = "assets/images/";
+  static const String onboardingBackground = "${prefix}onboarding_background.png";
+  static const String onboardingBackground1 = "${prefix}onboarding_background1.png";
 
-  static const String onboarding1 = "assets/images/onboarding1.png";
-  static const String onboarding2 = "assets/images/onboarding2.png";
-  static const String onboarding3 = "assets/images/onboarding3.png";
-  static const String onboarding4 = "assets/images/onboarding4.png";
-  static const String appLabel = "assets/images/app_label.svg";
+  static const String onboarding1 = "${prefix}onboarding1.png";
+  static const String onboarding2 = "${prefix}onboarding2.png";
+  static const String onboarding3 = "${prefix}onboarding3.png";
+  static const String onboarding4 = "${prefix}onboarding4.png";
+  static const String appLabel = "${prefix}app_label.svg";
 }
 
 class AppIcons{
-  static const String googleIcon = "assets/icons/google.svg";
+  static const String prefix = "assets/icons/";
+  static const String googleIcon = "${prefix}google.svg";
+  static const String search = "${prefix}search.svg";
+  static const String bell = "${prefix}bell.svg";
+  static const String send = "${prefix}send.svg";
 }
