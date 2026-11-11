@@ -16,4 +16,8 @@ class AppIcons{
   static const String search = "${prefix}search.svg";
   static const String bell = "${prefix}bell.svg";
   static const String send = "${prefix}send.svg";
+  static const String like = "${prefix}thumbs_up.svg";
+  static const String chatCircle = "${prefix}chat_circle.svg";
+  static const String share = "${prefix}share.svg";
+  static const String save = "${prefix}save.svg";
 }

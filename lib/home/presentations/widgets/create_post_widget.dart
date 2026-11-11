@@ -1,6 +1,6 @@
+import 'package:dotted_border/dotted_border.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil_plus/flutter_screenutil_plus.dart';
-import 'package:social_mate/core/constants/assets.dart';
 import 'package:social_mate/core/shared_widgets/spacer.dart';
 import 'package:social_mate/core/theme/app_colors.dart';
 
@@ -10,49 +10,58 @@ class CreatePostWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.symmetric(vertical: 28.h, horizontal: 17.w),
-      padding: EdgeInsets.symmetric(horizontal: 28.w, vertical: 17.h),
-      decoration: BoxDecoration(
-        color: Color(0xfff1f7fb),
-        border: BoxBorder.all(
-          color: AppColors.primary,
-          style: BorderStyle.solid,
-          width: 0.8.w
-        ),
-        borderRadius: BorderRadius.circular(16.r),
-      ),
-      child: Column(
-        children: [
-          Row(
+      padding: EdgeInsets.symmetric(horizontal: 17.w, vertical: 28.h),
+      child: DottedBorder(
+        
+      options: RoundedRectDottedBorderOptions(
+        radius: Radius.circular(24.r),
+        color: AppColors.primary, 
+        dashPattern: [5, 5]),
+        
+        child: Container(
+          padding: EdgeInsets.symmetric(horizontal: 28.w, vertical: 17.h),
+          decoration: BoxDecoration(
+            color: Color(0xfff1f7fb),
+            borderRadius: BorderRadius.circular(16.r),
+          ),
+          child: Column(
             children: [
-              CircleAvatar(backgroundImage: AssetImage(Images.onboarding1),),
-              HorizontalSpacer(10),
-              Text("Whats on your mind ?", style: TextStyle(color: Color(0xffC4C4C4), fontSize: 18),)
+              Row(
+                children: [
+                  CircleAvatar(
+                    radius: 20.r,
+                    backgroundImage: NetworkImage("https://imgs.search.brave.com/Bw3U_KtyGGULGBe-ouM3zNVvqgjyTizf7ls4OAG1a_A/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvNzQ4/MzQwODY3L3Bob3Rv/L3BvcnRyYWl0LW9m/LWJlYXJkZWQtbWFu/LmpwZz9zPTYxMng2/MTImdz0wJms9MjAm/Yz1uN3dfSWdHWXpr/VEwtbG9JQVhqUUEz/cjdJQ3FFWEJQbTZP/MlVZTHVnR3ljPQ",
+                    
+                    ), ),
+                  HorizontalSpacer(10),
+                  Text("Whats on your mind ?", style: TextStyle(color: Color(0xffC4C4C4), fontSize: 18),)
+                ],
+              ),
+              SizedBox(height: 20.h,),
+              Container(
+                padding: EdgeInsets.symmetric(vertical: 16.h),
+                decoration: BoxDecoration(
+                  color: Color(0xffE4F5FF),
+                  borderRadius: BorderRadius.circular(8.r),
+                  border: BoxBorder.all(
+                    color: AppColors.primaryBlur
+                  )
+                ),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    _selection(Icons.image, "Image"),
+                    _verticalRowDivider(),
+                    _selection(Icons.video_camera_back_rounded, "Video"),
+                    _verticalRowDivider(),
+                    _selection(Icons.attach_file_rounded, "Attach")
+                    
+                  ],
+                ),
+              )
             ],
           ),
-          SizedBox(height: 20.h,),
-          Container(
-            padding: EdgeInsets.symmetric(vertical: 16.h),
-            decoration: BoxDecoration(
-              color: Color(0xffE4F5FF),
-              borderRadius: BorderRadius.circular(8.r),
-              border: BoxBorder.all(
-                color: AppColors.primaryBlur
-              )
-            ),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                _selection(Icons.image, "Image"),
-                _verticalRowDivider(),
-                _selection(Icons.video_camera_back_rounded, "Video"),
-                _verticalRowDivider(),
-                _selection(Icons.attach_file_rounded, "Attach")
-                
-              ],
-            ),
-          )
-        ],
+        ),
       ),
     );
   }
