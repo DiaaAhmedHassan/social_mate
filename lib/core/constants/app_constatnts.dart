@@ -1,0 +1,4 @@
+class AppConstatnts {
+  static const String networkNatureImage = "https://imgs.search.brave.com/-NkTTqlYXAwi2x8m5Xf1WZL0U88naXX8QP_7xprQLsQ/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9wbmcu/cG5ndHJlZS5jb20v/dGh1bWJfYmFjay9m/aDI2MC9iYWNrZ3Jv/dW5kLzIwMjQwOTI4/L3BuZ3RyZWUtYmVh/dXRpZnVsLW5hdHVy/ZS1sYW5kc2NhcGUt/d2l0aC1tb3VudGFp/bnMtaW1hZ2VfMTYy/NjA5NjYuanBn";
+  static const String networkProfileImage = "https://imgs.search.brave.com/Bw3U_KtyGGULGBe-ouM3zNVvqgjyTizf7ls4OAG1a_A/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvNzQ4/MzQwODY3L3Bob3Rv/L3BvcnRyYWl0LW9m/LWJlYXJkZWQtbWFu/LmpwZz9zPTYxMng2/MTImdz0wJms9MjAm/Yz1uN3dfSWdHWXpr/VEwtbG9JQVhqUUEz/cjdJQ3FFWEJQbTZP/MlVZTHVnR3ljPQ";
+}

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil_plus/flutter_screenutil_plus.dart';
 import 'package:social_mate/core/shared_widgets/spacer.dart';
-import 'package:social_mate/home/presentations/widgets/post_action_widget.dart';
-import 'package:social_mate/home/presentations/widgets/post_content_widget.dart';
-import 'package:social_mate/home/presentations/widgets/post_user_widget.dart';
+import 'package:social_mate/home/presentations/widgets/home_page_widgets/post_action_widget.dart';
+import 'package:social_mate/home/presentations/widgets/home_page_widgets/post_content_widget.dart';
+import 'package:social_mate/home/presentations/widgets/home_page_widgets/post_user_widget.dart';
 
 class PostWidget extends StatelessWidget {
   const PostWidget({super.key});

@@ -3,6 +3,7 @@ import 'package:social_mate/core/routing/route_names.dart';
 import 'package:social_mate/features/auth/presenation/screens/auth_screen.dart';
 import 'package:social_mate/features/onboarding/presentation/screens/onboarding_screen.dart';
 import 'package:social_mate/features/splash/splash_screen.dart';
+import 'package:social_mate/home/presentations/screens/create_post_screen.dart';
 import 'package:social_mate/home/presentations/screens/home_page.dart';
 
 class AppRouter {
@@ -16,6 +17,8 @@ class AppRouter {
         return MaterialPageRoute(builder: (_) => AuthScreen());
       case RouteNames.home:
         return MaterialPageRoute(builder: (_) => HomePage());
+      case RouteNames.createPost:
+        return MaterialPageRoute(builder: (_) => CreatePostScreen());
       default:
         return MaterialPageRoute(builder: (_) => Scaffold(body: Center(child: Text("No defiend routes"),),));
     }

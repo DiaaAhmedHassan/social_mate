@@ -20,4 +20,9 @@ class AppIcons{
   static const String chatCircle = "${prefix}chat_circle.svg";
   static const String share = "${prefix}share.svg";
   static const String save = "${prefix}save.svg";
+  static const String image = "${prefix}Image.svg";
+  static const String video = "${prefix}video.svg";
+  static const String attachment = "${prefix}attachment.svg";
+  static const String camera = "${prefix}camera.svg";
+
 }

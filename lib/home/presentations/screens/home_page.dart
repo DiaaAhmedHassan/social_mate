@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil_plus/flutter_screenutil_plus.dart';
 import 'package:social_mate/features/onboarding/presentation/widgets/onboarding_background.dart';
-import 'package:social_mate/home/presentations/widgets/create_post_widget.dart';
-import 'package:social_mate/home/presentations/widgets/home_app_bar.dart';
-import 'package:social_mate/home/presentations/widgets/post_widget.dart';
-import 'package:social_mate/home/presentations/widgets/story_circle.dart';
+import 'package:social_mate/home/presentations/widgets/home_page_widgets/create_post_widget.dart';
+import 'package:social_mate/home/presentations/widgets/home_page_widgets/home_app_bar.dart';
+import 'package:social_mate/home/presentations/widgets/home_page_widgets/post_widget.dart';
+import 'package:social_mate/home/presentations/widgets/home_page_widgets/story_circle.dart';
 
 class HomePage extends StatelessWidget {
    HomePage({super.key});
