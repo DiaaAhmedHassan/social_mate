@@ -6,8 +6,11 @@ class AppUserModel extends AppUser{
     required super.username,
     required super.email,
     required super.joinedAt,
-    required super.posts,
-    required super.friends,
+    super.profileImage,
+    super.coverImage,
+    super.numOfPosts,
+    super.numOfFollowers,
+    super.numOfPhotos
   });
 
   factory AppUserModel.fromJson(Map<String, dynamic> json){
@@ -16,8 +19,12 @@ class AppUserModel extends AppUser{
       username: json['username'],
       email: json['email'],
       joinedAt: json['joinedAt'],
-      posts: json['posts'], 
-      friends: json['friends']
+      profileImage: json['profileImage'],
+      coverImage: json['coverImage'],
+      numOfPosts: json['numOfPosts'],
+      numOfFollowers: json['numOfFollowers'],
+      numOfPhotos: json['numOfPhotos']
+
     );
   }
 
@@ -27,8 +34,11 @@ class AppUserModel extends AppUser{
     "username": username,
     "email": email,
     "joinedAt": joinedAt,
-    "posts": posts,
-    "friends": friends
+    "profileImage": profileImage,
+    "coverImage": coverImage,
+    "numOfposts": numOfPosts,
+    "numOfFollowers": numOfFollowers,
+    "numOfPhotos": numOfPhotos
     };
 
   }

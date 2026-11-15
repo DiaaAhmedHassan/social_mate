@@ -30,8 +30,6 @@ Future<Result<AppUser>> loginWithEmailPassword({required String email, required 
       email: u.email ?? '',
       username: u.displayName ?? 'guest',
       joinedAt: u.metadata.creationTime?.toIso8601String() ?? '',
-      posts: [],
-      friends: [],
     ));
   } on FirebaseAuthException catch (e) {
     return Error(_mapAuthError(e));
@@ -76,8 +74,7 @@ Failure _mapAuthError(FirebaseAuthException e) => switch (e.code) {
       username: username,
       email: email,
       joinedAt: firebaseUser.metadata.creationTime?.toIso8601String() ?? DateTime.now().toIso8601String(),
-      posts: [],
-      friends: [],
+     
     );
 
     await userRemoteDatasource.addUserToFireStore(user);

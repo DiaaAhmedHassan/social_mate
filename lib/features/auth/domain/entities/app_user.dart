@@ -3,16 +3,23 @@ class AppUser{
   String username;
   String email;
   String? joinedAt;
-  List posts;
-  List<AppUser> friends;
+  String? profileImage;
+  String? coverImage;
+  int numOfPosts;
+  int numOfFollowers;
+  int numOfPhotos;
+
 
   AppUser({
     required this.userId,
     required this.username,
     required this.email,
      this.joinedAt,
-    required this.posts,
-    required this.friends
+     this.profileImage,
+     this.coverImage,
+     this.numOfPosts = 0,
+     this.numOfFollowers = 0,
+     this.numOfPhotos = 0
     
   });
   
