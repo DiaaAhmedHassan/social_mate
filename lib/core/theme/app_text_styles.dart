@@ -14,9 +14,19 @@ class AppTextStyles {
     fontWeight: FontWeight.w400,
     color: color
   );
+  TextStyle get f16Semibold  => TextStyle(
+    fontSize: 16,
+    fontWeight: FontWeight.w500,
+    color: color
+  );
   TextStyle get f24Light  => TextStyle(
     fontSize: 24,
     fontWeight: FontWeight.w400,
+    color: color
+  );
+  TextStyle get f24Semibold  => TextStyle(
+    fontSize: 24,
+    fontWeight: FontWeight.w500,
     color: color
   );
   TextStyle get f18Regular  => TextStyle(
@@ -29,6 +39,11 @@ class AppTextStyles {
   );
   TextStyle get f14Medium  => TextStyle(
     fontSize: 14,
+    fontWeight: FontWeight.w500,
+    color: color
+  );
+  TextStyle get f28semibold  => TextStyle(
+    fontSize: 28,
     fontWeight: FontWeight.w500,
     color: color
   );

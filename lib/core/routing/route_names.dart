@@ -5,5 +5,6 @@ class RouteNames {
   static const String auth = "/auth";
   static const String home = "/home";
   static const String createPost = "/createPost";
+  static const String profile = "/profile";
 
 }
