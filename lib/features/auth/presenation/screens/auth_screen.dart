@@ -6,12 +6,14 @@ import 'package:social_mate/features/auth/presenation/widgets/auth_componant/log
 import 'package:social_mate/features/auth/presenation/widgets/auth_componant/sign_up_widget.dart';
 import 'package:social_mate/features/auth/presenation/widgets/auth_navigator.dart';
 import 'package:social_mate/features/onboarding/presentation/widgets/onboarding_background.dart';
+import 'package:social_mate/l10n/app_localizations.dart';
 
 class AuthScreen extends StatelessWidget {
   const AuthScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
+    final local = AppLocalizations.of(context)!;
     return Scaffold(
       body: OnboardingBackground(
         child: SafeArea(
@@ -26,7 +28,9 @@ class AuthScreen extends StatelessWidget {
                   children: [
                     SvgPicture.asset(Images.appLabel),
                     SizedBox(height: 70.h,),
-                    AuthNavigator(
+                    TabsNavigator(
+                      page1Name: local.authSignin,
+                      page2Name: local.authSignup,
                       pages: [
                         (goTo) => LoginWidget(onSignupTap: () => goTo(1)),
                         (goTo) => SignUpWidget(),
